@@ -48,4 +48,4 @@ def score_fetch(dataRec:List[Cord]):
     return{"Harsh Acceleration": dataGot['Harsh Acceleration'],
     'Harsh Braking': dataGot['Harsh Braking'],
     'Harsh Turn': dataGot['Harsh Turn'],
-    'Normal': dataGot['Harsh Normal']}
+    'Normal': dataGot['Normal']}
