@@ -43,6 +43,7 @@ def score_fetch(dataRec:List[Cord]):
     df["Latitude"] = pd.to_numeric(df["Latitude"], errors ='ignore')
     df["Longitude"] = pd.to_numeric(df["Longitude"], errors ='ignore')
     df["speed"] = pd.to_numeric(df["speed"], errors ='ignore')
+    print(df)
     dataGot = scoreValue(df)
     return{"Harsh Acceleration": dataGot['Harsh Acceleration'],
     'Harsh Braking': dataGot['Harsh Braking'],
