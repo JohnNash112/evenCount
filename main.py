@@ -39,6 +39,7 @@ def score_fetch(dataRec:List[Cord]):
     print(collected_data)
     df = pd.DataFrame(collected_data, columns =['time', 'Latitude', 'Longitude', 'speed'])
     df["TripID"] = 'T-0'
+    df['time'] = pd.to_numeric(df['time'], errors = 'ignore')
     df["Latitude"] = pd.to_numeric(df["Latitude"], errors ='ignore')
     df["Longitude"] = pd.to_numeric(df["Longitude"], errors ='ignore')
     df["speed"] = pd.to_numeric(df["speed"], errors ='ignore')
